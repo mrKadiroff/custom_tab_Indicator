@@ -15,15 +15,15 @@
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
+            android:background="#1781C1"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tabGravity="center"
-            android:layout_margin="16sp"
+            app:tabIndicatorAnimationMode="elastic"
             app:tabIndicatorHeight="0dp"
-            app:tabMode="fixed"
+            app:tabMode="auto"
             app:tabRippleColor="@null" />
 
         <androidx.viewpager2.widget.ViewPager2
