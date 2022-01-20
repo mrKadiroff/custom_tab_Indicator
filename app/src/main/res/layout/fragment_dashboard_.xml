@@ -18,12 +18,16 @@
             android:layout_width="match_parent"
             android:background="#1781C1"
             android:layout_height="wrap_content"
+            app:tabMaxWidth="200dp"
+            app:tabMinWidth="20dp"
+            app:tabPaddingStart="12dp"
+            app:tabPaddingEnd="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tabIndicatorAnimationMode="elastic"
             app:tabIndicatorHeight="0dp"
             app:tabMode="auto"
+            app:layout_constraintHorizontal_weight="0"
             app:tabRippleColor="@null" />
 
         <androidx.viewpager2.widget.ViewPager2

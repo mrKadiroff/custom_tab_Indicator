@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.indicatorultra.databinding.FragmentDashboardBinding
+import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlin.math.roundToInt
 
@@ -36,10 +38,12 @@ class Dashboard_Fragment : Fragment() {
             tab.text = tabTitles[position]
         }.attach()
 
-        for (i in 0..4) {
 
+
+        for (i in 0..4) {
            val textView = LayoutInflater.from(requireContext()).inflate(R.layout.tab_title, null)
             as TextView
+
 
             binding.tabLayout.getTabAt(i)?.customView = textView
         }
